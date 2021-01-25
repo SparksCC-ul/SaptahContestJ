@@ -1,0 +1,17 @@
+#include<stdio.h>
+void main()
+{
+int x,y;
+int t;
+int a=1;
+scanf(“%d”,&t);
+while(1<=t<=100)
+{
+if(a<=t)
+{
+scanf(“%d %d”,&x,&y);
+printf(“%d %d \n”,x+y);
+}
+a++;
+}
+}
