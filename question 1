@@ -5,5 +5,5 @@ try:
     c=y+x
     print(c)
 except:
-    print("one number was only given")
+    print("one number was only given or u might have enter a string ")
 
