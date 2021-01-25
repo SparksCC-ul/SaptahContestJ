@@ -13,14 +13,14 @@ int main()
        i = looping variable
     */
     
-    int n, a[100], b[100], sum, i;
+    int n, a[100], b[100], sum[100], i;
     cin>>n;
     for(i=1;i<=n;i++)
     {
-        sum = 0;
         cin>>a[i]>>b[i];
-        sum = a[i] + b[i];
-        cout<<sum;
+        sum[i] = a[i] + b[i];
     }
+    for(i=1; i<=n; i++)
+      cout<<sum[i]<<endl;
     return 0;
 }
