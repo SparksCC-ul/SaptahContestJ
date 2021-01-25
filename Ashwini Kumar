@@ -1,0 +1,17 @@
+// Ashwini Kumar
+// ise059@bnmit.in
+// ISE A1
+#include<stdio.h>
+int main()
+{
+int T,X,Y;
+scanf("%d", &T);
+if (T>=1 && T<10)
+{
+    scanf("%d %d", &X,&Y);
+    printf("%d\n", X+Y);
+    scanf("%d %d", &X,&Y);
+    printf("%d", X+Y);
+}
+return 0;
+}
