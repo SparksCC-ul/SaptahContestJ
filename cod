@@ -1,0 +1,6 @@
+def cod():
+    a, b = [int(x) for x in input().split(', ')]
+    print(a+b)
+#SHRISHA NAYAK
+#aiml005@bnmit.in
+cod()
