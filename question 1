@@ -1,0 +1,9 @@
+try:
+    a,b=input("enter:").split()
+    x=int(a)
+    y=int(b)
+    c=y+x
+    print(c)
+except:
+    print("one number was only given")
+
