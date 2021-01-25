@@ -17,7 +17,7 @@ For each test case, print a single line contains a single integer which is the s
 
 
 ## Sample Input:
-5  
+5  private:
 22 12  
 23 12  
 1 1  
@@ -31,3 +31,46 @@ For each test case, print a single line contains a single integer which is the s
 2  
 5  
 200
+#include<iostream.h>
+#include<iomanip.h>
+class sum
+{
+   private:int n;
+   public: void getdata();
+   void compute();
+   void display();
+  };
+    void sum::getdata()
+    {
+    cout<<"ENTER NUMBER";
+    cin>>n;
+    cout<<"ENTER TWO NUMBERS TO ADD";
+    cin>>n1>>n2;
+    }
+     void sum::compute()
+     {
+     sum=n1+n2;
+     }
+     void sum::display()
+     {
+     cout<<n<<endl;
+     cout<<n1<<" "<<n2<<endl;
+     cout<<sum;
+     }
+     void main()
+     {
+     sum s;
+     clrscr();
+     s.getdata();
+     s.compute();
+     s.display();
+     getch();
+     }
+     //sanjana j bharadwaj
+     //sanjana2002251@gmail.com
+     
+     
+    
+     
+    
+    
