@@ -1,0 +1,10 @@
+n=int(input())
+ar=[]
+for i in range (n):
+    
+   a=int(input())
+   b=int(input())
+   sum=a+b
+   ar.append(sum)
+for i in range(0,len(ar)):
+    print(ar[i])
