@@ -1,0 +1,13 @@
+#include<iostream.h>
+#include<iomanip.h>
+#include<conio.h>
+void main()
+{
+int X,Y,sum;
+clrscr();
+cout<<"Enter the value of X and Y: ";
+cin>>X>>Y;
+sum=X+Y;
+cout<<"The sum of X and Y is ";
+getch();
+}
