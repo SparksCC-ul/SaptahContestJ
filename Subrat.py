@@ -29,6 +29,8 @@ if T >=1 and T<= 1000:
             list.sort()
         if len(list) == 0:
             print("")
+        elif list[0] == list[1] or list[0] == list[2] or list[1] == list[2]:
+            print("Second highest digit is :- " , list[0])
         else:
             print("Second highest digit is :- " , list[-2])
             print("Next CASE")
