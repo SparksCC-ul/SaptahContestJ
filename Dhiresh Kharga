@@ -1,51 +1,49 @@
-#include<stdio.h>
-
+// Dhiresh Kharga
+// ise067@bnmit.in
+// ISE A1
+#include <stdio.h>
 int main()
 {
-    printf("\n\n\t\tStudytonight - Best place to learn\n\n\n");
-
-    double a, b, c;
-
-    printf("Enter 3 numbers:\n");
-    scanf("%lf%lf%lf", &a, &b, &c);  //lf is a format specifier to take double as input
-
-    // a is the largest
-    if(a >= b && a >= c)
+    int T, A, B, C, n = 1;
+    scanf("%d", &T);
+    while (n <= T)
     {
-        if(b >= c)
+        scanf("%d %d %d", &A, &B, &C);
+        if (A >= B && A >= C)
         {
-            /*
-                .2lf restricts the number till 
-                2 decimal places
-            */
-            printf("\n\n%.2lf is the 2nd largest number\n", b);
+            if (B >= C)
+            {
+
+                printf("%d", B);
+            }
+            else
+            {
+                printf("%d", C);
+            }
+        }
+        else if (B >= A && B >= C)
+        {
+            if (A >= C)
+            {
+
+                printf("%d", A);
+            }
+            else
+            {
+                printf("%d", C);
+            }
+        }
+        else if (B >= A)
+        {
+            printf("%d", B);
         }
         else
         {
-            printf("\n\n%.2lf is the 2nd largest number\n", c);
+            printf("%d", C);
         }
-    }
-    else if(b >= a && b >= c)
-    {
-        if(a >= c)
-        {
-            printf("\n\n%.2lf is the 2nd largest number\n",a);
-        }
-        else
-        {
-            printf("\n\n%.2lf is the 2nd largest number\n",c);
-        }
+
+        n++;
     }
 
-    // c is the largest number of the three
-    else if(a >= b)
-    {
-        printf("\n\n%.2lf is the 2nd largest number\n", a);
-    else
-    {
-        printf("\n\n%.2lf is the 2nd largest number\n", b);
-    }
-
-    printf("\n\n\t\t\tCoding is Fun !\n\n\n");
     return 0;
 }
