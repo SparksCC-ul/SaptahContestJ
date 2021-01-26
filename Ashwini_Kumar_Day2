@@ -1,0 +1,49 @@
+// Ashwini Kumar
+// ise059@bnmit.in
+// ISE A1
+#include <stdio.h>
+int main()
+{
+    int T, A, B, C, n = 1;
+    scanf("%d", &T);
+    while (n <= T)
+    {
+        scanf("%d %d %d", &A, &B, &C);
+        if (A >= B && A >= C)
+        {
+            if (B >= C)
+            {
+
+                printf("%d", B);
+            }
+            else
+            {
+                printf("%d", C);
+            }
+        }
+        else if (B >= A && B >= C)
+        {
+            if (A >= C)
+            {
+
+                printf("%d", A);
+            }
+            else
+            {
+                printf("%d", C);
+            }
+        }
+        else if (B >= A)
+        {
+            printf("%d", B);
+        }
+        else
+        {
+            printf("%d", C);
+        }
+
+        n++;
+    }
+
+    return 0;
+}
