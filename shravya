@@ -1,0 +1,33 @@
+include<stdio.h>
+void main()
+{
+int T;
+int x=1;
+int A,B,C;
+scanf("%d",T);
+while(1<=T<=1000 && 1<=A,B,C<=1000000)
+{
+if(x<=T)
+{
+scanf(“ %d %d %d” ,&A,&B,&C);
+if (A<B && A>C)
+printf(“%d”,A);
+else if (B<A && B>C)
+printf(“%d”,B);
+else if(C<A && C>B)
+printf(“%d”,C);
+else if(A==B && A<C)
+printf(“%d”,A);
+else if(C==B && C<A)
+printf(“%d”,B);
+else if(A==C && A<B)
+printf(“%d”,C);
+else
+printf("%d",A);
+x++;
+}
+}
+}
+//Shravya Muralidhara
+// shravyamuralidhara@gmail.com
+
