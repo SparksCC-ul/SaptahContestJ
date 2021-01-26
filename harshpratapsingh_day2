@@ -1,0 +1,35 @@
+//name: harsh pratap singh
+//email: harshpratapsingh4151@gmail.com
+//CSE-A
+#include <stdio.h>
+int main() {
+    double n1, n2, n3;
+    printf("Enter three different numbers: ");
+    scanf("%lf %lf %lf", &n1, &n2, &n3);
+
+    // if n1 is greater than n2 and n1 is lesser than n3, n1 is the second largest
+    if (n1 >= n2 && n1 <= n3)
+        printf("%.2f is the second largest number.", n1);
+
+   // if n1 is greater than n3 and n1 is lesser than n2, n1 is the second largest
+    if (n1 <= n2 && n1 >= n3)
+        printf("%.2f is the second largest number.", n1);
+
+   // if n2 is greater than n1 and n2 is lesser than n3, n2 is the second largest
+    if (n2 >= n1 && n2 >= n3)
+        printf("%.2f is the second  argest number.", n2);
+
+   // if n2 is greater than n3 and n2 is lesser than n1, n2 is the second largest
+    if (n2 <= n1 && n2 >= n3)
+        printf("%.2f is the second largest number.", n2);
+
+   // if n3 is greater than n1 and n3 is lesser than n2, n3 is the second largest
+    if (n3 >= n1 && n3 <= n2)
+        printf("%.2f is the second largest number.", n3);
+
+  // if n3 is greater than n2 and n3 is lesser than n1, n3 is the second largest
+    if (n3 <= n1 && n3 >= n2)
+        printf("%.2f is the second largest number.", n3);
+
+    return 0;
+}
