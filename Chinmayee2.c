@@ -31,7 +31,7 @@
     if(c>a&&c>b)
 
 
-	if(b>a)
+        if(b>a)
 	printf("second largest no. is %d",b);
 	else
 	printf("second largest no. is %d",a);
