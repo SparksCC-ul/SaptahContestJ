@@ -1,0 +1,10 @@
+x=int(input("enter number of test cases"))
+for i in range(1,x+1):
+    print("case no.",i)
+    l=[]
+    for j in range (1,4):
+        a=int(input("enter no. "))
+        l.append(a)
+        
+    l.sort()
+    print("second largest no.",l[-2])
