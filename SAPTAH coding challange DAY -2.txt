@@ -1,0 +1,47 @@
+#include<studio.h>
+
+int main() {
+
+    int A,B,C;
+   
+    printf("\nEnter first number: ");
+    scanf("%d", &A);
+
+    printf("\nEnter second number: ");
+    scanf("%d", &B);
+
+    printf("\nEnter third number: ");
+    scanf("%d", &C);
+
+    if(A==B||B==C||A==C){
+        printf("\nNumbers should be distinct");
+        return 0;
+    }
+
+    if(A>=B && A>=C) {
+        if(B>=C) {
+            printf("\n%d is the second largest number", B);
+        }else{
+            printf("\n%d is the second largest number", C);
+        }
+    }
+    else if(B>=C) {
+            if(A>=C){
+                printf("\n%d is the second largest number", A);
+            }
+            else{
+                printf("\n%d is the second largest number", C);
+            }
+    }
+    else{
+        if(A>=B) {
+            printf("\n%d is the second largest number", A);
+        }
+        else{
+            printf("\n%d is the second largest number", B);
+        }
+    }
+
+    return 0;
+
+}
