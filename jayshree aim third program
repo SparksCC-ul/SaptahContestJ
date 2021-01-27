@@ -1,0 +1,27 @@
+#include<iostream.h>
+#include<conio.h>
+class saptahthree
+{
+  public void main()
+   {
+      int a[10][10],r,c,n,b=0,max=0,row;
+      cin>>n;
+      for(r=0;r<n;r++)
+       {
+         for(c=0;c<n;c++)
+          {
+             cin>>a[r][c];
+             if(a[r][c]==0)
+                b++;
+           }
+           if(b>max)
+           {
+             max=b;
+             row=r;
+            }
+          b=0;  
+       }
+       cout<<row;
+     }
+  }   
+     
