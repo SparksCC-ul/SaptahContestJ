@@ -1,0 +1,19 @@
+#include<stdio.h>
+void main() {
+    int t,i,a[100],b[100],c[100],max2[100];
+    printf("Enter the no. of test cases : ");
+    scanf("%d",&t);
+    printf("Enter the test cases : \n");
+    for(i=1;i<=t;i++) {
+        scanf("%d %d %d",&a[i],&b[i],&c[i]);
+    }
+    for(i=1;i<=t;i++) {
+        if (a[i] == 0 ||b[i] == 0 || c[i] == 0) {
+            printf("");
+        }else{
+            max2[i] = (a[i] >= b[i] && a[i] >= c[i]) ? ((b[i] >= c[i]) ? b[i] : c[i]) : ((b[i] >= c[i]) ? ((a[i] >= c[i]) ? a[i] : c[i]) : ((a[i] >= b[i]) ? a[i] : b[i]));
+            printf("Second largest no. is %d\n",max2[i]);
+        }
+    }
+    
+}
