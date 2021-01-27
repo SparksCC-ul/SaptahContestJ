@@ -1,0 +1,39 @@
+//Dhiresh Kharga
+//ise067@bnmit.in
+//ISE A1
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+
+void main(){
+    int N, i = 0, j, k, total = 0, maximum = 0, max_index = 0;
+    int arr[50][50], a[10];
+    printf("N=");
+    scanf("%d",&N);
+
+    for(i = 0;i<N;i++){
+        for(j = 0;j<N;j++){
+            scanf("%d",&arr[i][j]);
+        }
+        printf("\n");
+    }
+
+    for(i = 0;i<N;i++){
+        for(j = 0;j<N;j++){
+            if (arr[j][i] == 0){
+                total = total + 1;
+            }
+        }
+        a[i] = total;
+        total = 0;
+    }
+
+    maximum = a[0];
+    for(k = 0;k<N;k++){
+        if (a[k] > maximum){
+            maximum = a[k];
+            max_index = k;
+        }
+    }
+    printf("The maximum no. of zeros are in index %d",max_index);
+}
