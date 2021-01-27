@@ -1,0 +1,13 @@
+p=[]
+s=[]
+x=[]
+kases = input('no. of cases: ')
+for kase in range(int(kases)):
+    a,b,c = input().split()
+    s=(a,b,c)
+    x=sorted(s)
+    p.append(x[3-2])
+for kase in range(int(kases)):
+    print(p[kase])
+#rishabh19cs081bnmit.in
+#rishabhshukla
