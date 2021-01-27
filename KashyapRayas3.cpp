@@ -31,7 +31,7 @@ int main()
     
     for(i=1; i<N; i++)         //Comparing rowcounts to find max zeroes and respective row
     {
-        if(rowcount[i]>max)   
+        if(rowcount[i]>=max)   
         {
           max = rowcount[i];
           result = i;
