@@ -1,0 +1,22 @@
+n=input()
+matrix=[]
+for iterate in range(int(n)):
+        inputValue=input().split()
+        matrix.append(inputValue)
+for rowEle in matrix:
+    for colInd in range(len(rowEle)):
+        rowEle[colInd]=int(rowEle[colInd])
+zeroRowCount=[]
+for row in matrix:
+    zeroCount=0
+    for rowEle in row:
+        if rowEle==0:
+            zeroCount+=1
+    zeroRowCount.append(zeroCount)
+maxValue=max(zeroRowCount)
+for ind in range(len(zeroRowCount)):
+    if zeroRowCount[ind]==maxValue:
+        print(ind+1)
+        
+#adarshthambi@gmail.com
+#Adarsh S Thambi-Day3
