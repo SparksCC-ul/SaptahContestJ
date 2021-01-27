@@ -14,14 +14,12 @@ Steps to Solve the questions in Github
 * Click on "create Pull Request'
 * Done
 
-# Here are some powerful words spoken by great people in reference to our nation:
+# Today's Topic: Arrays
 
-“A nation’s culture resides in the hearts and in the soul of its people.” - Mahatma Gandhi 
+### Applications of Arrays
 
-"Even if I died in the service of the nation, I would be proud of it. Every drop of my blood… will contribute to the growth of this nation and to make it strong and dynamic." – Indira Gandhi
-
-"If there is one place on the face of earth where all the dreams of living men have found a home from the very earliest days when man began the dream of existence, it is India." – Romain Rolland
-
-"I feel that the constitution is workable, it is flexible and it is strong enough to hold the country together both in peacetime and in wartime. Indeed, if I may say so, if things go wrong under the new Constitution, the reason will not be that we had a bad Constitution. What we will have to say is that Man was vile." – B.R. Ambedkar
-
-"At the dawn of history India started on her unending quest, and trackless centuries are filled with her striving and the grandeur of her success and her failures. Through good and ill fortune alike she [India] has never lost sight of that quest or forgotten the ideals which gave her strength." - Jawaharlal Nehru 
+* Arrays are used to implement mathematical vectors and matrices, as well as other kinds of rectangular tables.  
+* Many databases, small and large, consist of one-dimensional arrays whose elements are records.  
+* Arrays are used to implement other data structures, such as lists, heaps, hash tables, deques, queues and stacks.  
+* One or more large arrays are sometimes used to emulate in-program dynamic memory allocation, particularly memory pool allocation. Historically, this has sometimes been the only way to allocate "dynamic memory" portably.  
+* Arrays can be used to determine partial or complete control flow in programs, as a compact alternative to (otherwise repetitive) multiple “if” statements. They are known in this context as control tables and are used in conjunction with a purpose built interpreter whose control flow is altered according to values contained in the array. The array may contain subroutine pointers(or relative subroutine numbers that can be acted upon by SWITCH statements) that direct the path of the execution.
