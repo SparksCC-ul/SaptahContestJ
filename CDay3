@@ -1,0 +1,33 @@
+#include<stdio.h>
+void main() {
+    int i,j,n=3;
+    int r1,r2,r3,maxrow;
+    int arr[3][3] = {{1,0,1},{0,0,1},{0,0,0}};
+    printf("Given array is : \n");
+    for (i=0;i<n;i++) {
+        for (j=0;j<n;j++) {
+            printf("%d\t",arr[i][j]);
+        }printf("\n");
+    }
+    do {
+        if(arr[i][j] == 0) {
+            r1++;
+            j++;
+        }
+    } while (i=0 && j<3);
+        do {
+        if(arr[i][j] == 0) {
+            r2++;
+            j++;
+        }
+    } while (i=1 && j<3);
+        do {
+        if(arr[i][j] == 0) {
+            r3++;
+            j++;
+        }
+    } while (i=2 && j<3);
+ 
+    maxrow = r1 > r2 ? (r1 > r3 ? r1 : r3) : (r2 > r3 ? r2 : r3); 
+    printf("The row with maximum no. of 0s is %d\n",maxrow);
+}
