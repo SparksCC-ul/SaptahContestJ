@@ -1,0 +1,45 @@
+// Dhiresh Kharga
+// ise067@bnmit.in
+// ISE A1
+#include <stdio.h>
+
+void main()
+{
+    int num1, num2, gcd, lcm, remainder, numerator, denominator, T, n = 1,N;
+    scanf("%d", &T);
+
+    while (n <= T)
+    {       
+        scanf("%d %d", &num1, &num2);
+        if (num1 > num2)
+        {
+            numerator = num1;
+            denominator = num2;
+        }
+        else
+        {
+            numerator = num2;
+            denominator = num1;
+        }
+        remainder = numerator % denominator;
+        while (remainder != 0)
+        {
+            numerator = denominator;
+            denominator = remainder;
+            remainder = numerator % denominator;
+        }
+        gcd = denominator;
+        lcm = num1 * num2 / gcd;
+        N = n % 2;
+        if (N == 0)
+        {
+            printf(" %d\n",  lcm);
+        }
+        else
+        {
+
+            printf(" %d\n", gcd);
+        }
+        n++;
+    }
+}
