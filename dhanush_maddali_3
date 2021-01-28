@@ -1,0 +1,7 @@
+import numpy as np
+N=int(input("Enter number of rows of a matrix:"))
+a=numpy.np.empty((N,N),int)
+a=np.append()
+for i in range(N):
+    if count(a[N][0]==max):
+        print(i)
