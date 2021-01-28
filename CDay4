@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<stdlib.h>
+void main() {
+    int i,t=9,num1[100],num2[100],gcd[100],lcm[100],remain[100],nume[100],deno[100];
+    for(i=1;i<=t;i++) {
+        scanf("%d %d",&num1[i],&num2[i]);
+    }
+    for(i=1;i<=t;i++) {
+        if (num1[i] ==0 || num2[i] == 0) {
+            printf("");
+        } else {
+            if(num1[i] > num2[i]) {
+            nume[i]=num1[i];
+            deno[i]=num2[i];
+            } else {
+            nume[i]=num2[i];
+            deno[i]=num1[i];
+            }
+            remain[i]=nume[i]%deno[i];
+            while(remain[i] != 0) {
+            nume[i] = deno[i];
+            deno[i] = remain[i];
+            remain[i] = nume[i] % deno[i];
+            }
+            gcd[i]=deno[i];
+            lcm[i]=num1[i]*num2[i]/gcd[i];
+            printf("GCD = %d\tLCM = %d\n",gcd[i],lcm[i]);
+        }
+    }
+}
