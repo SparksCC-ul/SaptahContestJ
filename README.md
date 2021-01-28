@@ -14,12 +14,23 @@ Steps to Solve the questions in Github
 * Click on "create Pull Request'
 * Done
 
-# Today's Topic: Arrays
+# Today's Topic: Functions
 
-### Applications of Arrays
+### Functions
 
-* Arrays are used to implement mathematical vectors and matrices, as well as other kinds of rectangular tables.  
-* Many databases, small and large, consist of one-dimensional arrays whose elements are records.  
-* Arrays are used to implement other data structures, such as lists, heaps, hash tables, deques, queues and stacks.  
-* One or more large arrays are sometimes used to emulate in-program dynamic memory allocation, particularly memory pool allocation. Historically, this has sometimes been the only way to allocate "dynamic memory" portably.  
-* Arrays can be used to determine partial or complete control flow in programs, as a compact alternative to (otherwise repetitive) multiple “if” statements. They are known in this context as control tables and are used in conjunction with a purpose built interpreter whose control flow is altered according to values contained in the array. The array may contain subroutine pointers(or relative subroutine numbers that can be acted upon by SWITCH statements) that direct the path of the execution.
+Functions "Encapsulate" a task (they combine many instructions into a single line of code). Most programming languages provide many built in functions that would otherwise require many steps to accomplish, for example computing the square root of a number. In general, we don't care how a function does what it does, only that it "does it"!  
+
+When a function is "called" the program "leaves" the current section of code and begins to execute the first line inside the function. Thus the function "flow of control" is:  
+
+1) The program comes to a line of code containing a "function call".  
+2) The program enters the function (starts at the first line in the function code).  
+3) All instructions inside of the function are executed from top to bottom.  
+4) The program leaves the function and goes back to where it started from.  
+5) Any data computed and RETURNED by the function is used in place of the function in the original line of code.
+
+### Steps to Writing a Function
+
+* Understand the purpose of the function.
+* Define the data that comes into the function from the caller (in the form of parameters)!
+* Define what data variables are needed inside the function to accomplish its goal.
+* Decide on the set of steps that the program will use to accomplish this goal. (The Algorithm)
