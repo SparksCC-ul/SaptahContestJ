@@ -1,0 +1,32 @@
+def hcf(x,y):
+    if x<y:
+        s=x
+    else:
+        s=y
+    for i in range(1,s+1):
+        if x%i==0 and y%i==0:
+            h=i
+    return(h)
+def lcm(x,y):
+    if x>y:
+        g=x
+    else:
+        g=y
+    while True:
+        if g%x==0 and g%y==0 :
+            l=g
+            break
+        g=g+1
+    return(l)        
+n=int(input( ))
+for i in range(n):
+    a=int(input())
+    if a==1 :
+        x=int(input())
+        y=int(input())
+        print(hcf(x,y))
+    elif a==2 :
+        x=int(input())
+        y=int(input())
+        print(lcm(x,y))
+    
