@@ -1,0 +1,13 @@
+import math
+T=int(input()) #T is the number of test cases where 1<=T<=100
+for i in range(T):
+    if gcd:
+        int(input()) #Enter 1
+    elif lcm:
+        int(input()) #Enter 2
+    X,Y=int(input()).split() #1<=X,Y<=100
+    if gcd==True:
+        math.gcd(X,Y)
+    elif lcm==True:
+        math.lcm(X,Y)
+    print(i)
