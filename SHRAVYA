@@ -1,0 +1,32 @@
+
+#include <stdio.h>
+
+void main()
+{
+   int a,r,b;
+   int q=1;
+   int f=1;
+   int p=1;
+   int k;
+   scanf("%d",&k);
+   if(2<=k<=10)
+   {
+       for(int i=0; i<k; i++)
+       {
+           for(int j=0; j<=i; j++)
+           {
+               for(a=0; a<=i; a++)
+               f=f*a;
+               for(b=0; b<=(i-j); b++)
+               p=p*b;
+               for(r=0; r<=j; j++)
+               q=q*r;
+               
+               printf("%d ",f/(p*q));
+           }
+           printf("\n");
+       }
+   }
+}
+//shravya muralidhara
+//shravyamuralidhara@gmail.com
