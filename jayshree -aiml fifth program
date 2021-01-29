@@ -1,0 +1,38 @@
+package practise;
+
+import java.util.Scanner;
+public class saptahfive 
+{
+
+	public  int factorial(int n) 
+	{
+	    int f=1;
+	    for(int d=1;d<=n;d++)
+	    {
+	    	f=f*d;
+	    }
+	    return f;
+	}
+	public static void main(String[] args) 
+	{
+		saptahfive ob= new saptahfive();
+		Scanner sc= new Scanner(System.in);
+		  int k=sc.nextInt();
+		  for(int i=0;i<k;i++)
+		  {
+			  for(int j=0;j<=i;j++)
+			  {
+				 int a=ob.factorial(i);
+				 int b=ob.factorial(i-j);
+				 int c=ob.factorial(j);
+				 int v=(int)(a/(b*c));
+				 System.out.print(v + " ");
+			  }
+			  System.out.println();
+		  } 
+		  sc.close();
+	}
+
+}
+
+
