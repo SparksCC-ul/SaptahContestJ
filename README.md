@@ -14,23 +14,34 @@ Steps to Solve the questions in Github
 * Click on "create Pull Request'
 * Done
 
-# Today's Topic: Functions
+# Today's Topic: Recursion
 
-### Functions
+## Recursion
 
-Functions "Encapsulate" a task (they combine many instructions into a single line of code). Most programming languages provide many built in functions that would otherwise require many steps to accomplish, for example computing the square root of a number. In general, we don't care how a function does what it does, only that it "does it"!  
+Recursion is the process of defining a problem (or the solution to a problem) in terms of (a simpler version of) itself.
 
-When a function is "called" the program "leaves" the current section of code and begins to execute the first line inside the function. Thus the function "flow of control" is:  
+For example, we can define the operation "find your way home" as:
 
-1) The program comes to a line of code containing a "function call".  
-2) The program enters the function (starts at the first line in the function code).  
-3) All instructions inside of the function are executed from top to bottom.  
-4) The program leaves the function and goes back to where it started from.  
-5) Any data computed and RETURNED by the function is used in place of the function in the original line of code.
+    If you are at home, stop moving.
 
-### Steps to Writing a Function
+    Take one step toward home.
 
-* Understand the purpose of the function.
-* Define the data that comes into the function from the caller (in the form of parameters)!
-* Define what data variables are needed inside the function to accomplish its goal.
-* Decide on the set of steps that the program will use to accomplish this goal. (The Algorithm)
+    "find your way home".
+
+Here the solution to finding your way home is two steps (three steps). First, we don't go home if we are already home. Secondly, we do a very simple action that makes our situation simpler to solve. Finally, we redo the entire algorithm. 
+
+Another example of recursion would be finding the maximum value in a list of numbers. The maximum value in a list is either the first number or the biggest of the remaining numbers. Here is how we would write the pseudocode of the algorithm:
+
+         
+          Function find_max( list ) 
+ 
+            possible_max_1 = first value in list 
+            possible_max_2 = find_max ( rest of the list ); 
+             
+            if ( possible_max_1 > possible_max_2 ) 
+              answer is possible_max_1 
+            else 
+              answer is possible_max_2 
+            end 
+ 
+          end 
