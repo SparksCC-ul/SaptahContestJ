@@ -1,6 +1,6 @@
 # Problem Statement
 
-For a given integer K, print the first K rows of Pascal's Triangle. Print each row with each value separated by a single space. The value at the nth row and rth column of the triangle is equal to n!/((n-r)!* r!) where indexing starts from . These values are the binomial coefficients.
+For a given integer K, print the first K rows of Pascal's Triangle. Print each row with each value separated by a single space. The value at the nth row and rth column of the triangle is equal to n!/((n-r)!* r!) where indexing starts from 0. These values are the binomial coefficients.
 
 * Hint : Use Recursion 
 
