@@ -1,0 +1,8 @@
+n=int(input("enter range "))
+if (n>=2) and (n<=10):
+    for i in range(n):
+        e=str(11**i)
+        for i in e:
+             print(i+" ", end=" ")
+        print("")
+
