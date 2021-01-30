@@ -1,0 +1,4 @@
+n=int(input()) #Enter 5
+arr=[Student ID,Name,Class,Section,Total Marks].split() #Total Marks are out of 500
+arr.insert(1,'John','A',490)
+print(arr)
