@@ -1,0 +1,59 @@
+#include <stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+struct student
+{
+    int student_ID;
+    char* name;
+    int class;
+    char section;
+    int total_marks;
+};
+void main()
+
+{
+    int a;
+   int n=a;
+    scanf("%d",&a);
+    struct student info[5];
+    
+        info[0].student_ID=1;
+        info[0].name="siri";
+        info[0].class=12;
+        info[0].section='B';
+        info[0].total_marks=485;
+        
+        info[1].student_ID=2;
+        info[1].name="pari";
+        info[1].class=11;
+        info[1].section='B';
+        info[1].total_marks=492;
+        
+        info[2].student_ID=3;
+        info[2].name="hari";
+        info[2].class=10;
+        info[2].section='C';
+        info[2].total_marks=483;
+        
+        info[3].student_ID=1;
+        info[3].name="ram";
+        info[3].class=12;
+        info[3].section='D';
+        info[3].total_marks=495;
+        
+        info[4].student_ID=1;
+        info[4].name="sham";
+        info[4].class=11;
+        info[4].section='B';
+        info[4].total_marks=472;
+
+        
+    for(;a<=n;a++)
+    {
+        printf("student_ID  name  class  section  total_marks \n %d \t %s \t %d \t %c \t %d", info[a].student_ID,info[a].name,info[a].class,info[a].section,info[a].total_marks);
+        
+    }
+}
+//shravya muralidhara
+//shravyamuralidhara@gmail.com
