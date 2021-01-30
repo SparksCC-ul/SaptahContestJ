@@ -1,0 +1,54 @@
+/*Sparks Coding challenge: Day char16
+  Kashyap Rayas (kashyap.rayas@gmail.com) CSE A */
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+class student
+{
+    public:
+        /* index  = index number
+           sid    = student ID
+           name   = name of student
+           class1 = class of student
+           sec    = section of student
+           marks  = total marks         */
+              
+           int index;
+           int *sid;
+           string *name;
+           int *class1;
+           string *sec;
+           int *marks;
+           
+    public: 
+            student()                                                                   //initialising values
+            {
+                sid = new int[ 5 ]{1, 2, 3, 4, 5};
+                name = new string[ 5 ]{"Madhu", "Josh", "Sid", "Kash", "Siri"};
+                class1 = new int[ 5 ]{12, 12, 12, 12, 12};
+                sec = new string[ 5 ]{"A", "B", "A", "A", "B"};
+                marks = new int[ 5 ]{450, 410, 380, 487, 495};
+            }
+            void input()                                                                //input index number
+            {
+                cin>>index;
+            }
+            void display();                                                             //output table header and data
+};
+
+void student :: display()
+{
+    cout<<"Student ID"<<"\t"<<"Name"<<"\t"<<"Class"<<"\t"<<"Section"<<"\t"<<"  "<<"Total Marks"<<endl;
+    cout<<sid[index]<<"\t"<<"\t"<<name[index]<<"\t"<<class1[index]<<"\t"<<sec[index]<<"\t"<<"  "<<marks[index];
+}
+
+int main()
+{
+    student s;
+    s.input();                                                                           //input
+    s.display();                                                                         //output
+    return 0;
+}
