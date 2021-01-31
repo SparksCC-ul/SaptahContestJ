@@ -1,0 +1,11 @@
+l=list("abcdefghijklmnopqrstuvwxyz")
+b=list(input("enter"))
+x=l.index(b[0])
+y=l.index(b[len(b)-1])
+n=0
+for i in range(x,y+1):
+    if l[i] not in b:
+        print(l[i])
+        n=n+1
+if n==0:
+    print("none")
