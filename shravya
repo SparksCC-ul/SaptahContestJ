@@ -1,0 +1,29 @@
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		String st=sc.next();
+		int a=1;
+		for(int i=0; i<st.length(); i++)
+		{
+		    char ch=sc.next().charAt(i);
+		    int z=((int)ch);
+		    char ch2 = sc.next().charAt(a);
+		    int x=((int)ch2);
+		    ch=st.charAt(i);
+		    if(x==z+1)
+		    {
+		        x++;
+		        z++;
+		    }
+		    else
+		    System.out.println(ch2);
+		    a++;
+		}
+	}
+}
+//shravya muralidhara
+//shravyamuralidhara@gmail.com
