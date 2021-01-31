@@ -1,0 +1,60 @@
+package practise;
+
+import java.util.Scanner;
+
+public class saptahtwo 
+{
+
+	public static void main(String[] args) 
+	{
+		
+		Scanner sc=new Scanner(System.in);
+		  int t=sc.nextInt();
+		  int[] e=new int[t];
+		  for(int i=0;i<t;i++)
+		  {
+			 int a=sc.nextInt();
+			 int b=sc.nextInt();
+			 int c=sc.nextInt();
+			 if(a>b && a>c)
+			 {
+				 if(b>c)
+				 {
+					 e[i]=b;
+				 }
+				 else
+				 {
+					 e[i]=c;
+				 }
+			 }
+			 if(a<b && b>c)
+			 {
+				 if(a>c)
+				 {
+					 e[i]=a;
+				 }
+				 else
+				 {
+					 e[i]=c;
+				 }
+			 }
+			 if(c>b && a<c)
+			 {
+				 if(b>a)
+				 {
+					 e[i]=b;
+				 }
+				 else
+				 {
+					 e[i]=a;
+				 }
+			 }
+			 
+		  }
+		  for(int i=0;i<t;i++)
+		  {
+			  System.out.println(e[i]);
+		  }
+	}
+
+}

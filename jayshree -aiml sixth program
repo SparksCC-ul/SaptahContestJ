@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class saptahsix 
+{
+   int studentid,c,marks;
+   String name;
+   char section;
+   
+	public void create (int i, String string, int j, char d, int k)
+	{ 
+		studentid=i;
+		name=string;
+		c=j;
+		section=d;
+		marks=k;
+	}
+	
+  public static void main(String[] args) 
+	{
+		Scanner sc= new Scanner(System.in);
+		saptahsix[] ob=new saptahsix[5];
+	    ob[0].create(1,"ram",7,'A',345);
+	    ob[2].create(2,"rita",8,'B',445);
+	    ob[3].create(3,"raghav",9,'A',385);
+	    ob[4].create(4,"rina",10,'B',349);
+	    ob[1].create(5,"romy",11,'A',287);
+		int q=sc.nextInt();
+		q=q-1;
+		System.out.println("Student ID   Name   Class   Section   Total Marks");
+		System.out.println(ob[q].studentid +"   "+ob[q].name +"   "+ob[q].c +"   "+ob[q].section +"   "+ob[q].marks +"   ");
+		sc.close();
+	}
+	
+}
+
+
