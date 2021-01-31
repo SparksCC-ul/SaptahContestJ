@@ -1,0 +1,3 @@
+string=str(input()) #S is the number of indices of a string to be inputted where 2<S<=100
+a=str(ascii.lowercase())
+print(a-string)
